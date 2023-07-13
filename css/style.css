@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title-section{
+    color: #007C77;
+    display: flex;
+    align-items: center;
+    height: 68px;
+    width: 33%;
+
+}
+
+.title{
+    font-size: 44px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.fa-cat{
+    font-size: 36px;
+    padding-right: 16px;
+}
+
+.search-section
+{
+    width: 360px;
+    height: 30px;
+    border: solid 1px rgb(192, 186, 186);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 8px;
+    width: 33%;
+}
+
+.search-section input{
+    border: none;
+    width: 340px;
+    outline: none;
+}
+
+
+.fa-magnifying-glass{
+    background-color: rgb(227, 224, 224);
+    border: solid 1px rgb(192, 186, 186);
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding-top: 7px;
+    border-radius: 3px;
+}
+
+.fa-microphone-lines{
+    color: rgb(192, 186, 186);
+    margin-left: 10px;
+    font-size: 22px;
+}
+
+
+.notification-sidebar{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    width: 33%;
+    justify-content: end;
+}
+
+.fa-bell{
+    font-size: 22px;
+    margin: 20px;
+    color: rgb(192, 186, 186);;
+}
+
+.fa-paw{
+    font-size: 16px;
+    width: 40px;
+    height: 40px;
+    background-color: #007C77;
+    border-radius: 50%;
+    text-align: center;
+    padding: 11px;
+}
