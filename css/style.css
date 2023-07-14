@@ -36,7 +36,7 @@ header{
 }
 
 .sidebar {
-    max-width: 240px;
+    width: 240px;
     background-color: rgb(252, 247, 247);
 }
 
@@ -133,6 +133,8 @@ header{
 .players{
     overflow-y: hidden;
     flex-basis: 75%;
+    width: 240px;
+
 }
 
 .players:hover{
