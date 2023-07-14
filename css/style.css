@@ -2,31 +2,58 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
 }
+
+
 
 header{
     padding: 0 16px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: solid 1px rgb(252, 247, 247);
+    box-shadow: 0px 0px 5px 2px rgb(252, 247, 247);
+    position: fixed;
+    top: 0;
+    height: 68px;
+
 }
+
+.sidebar,
+.content {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 68px);
+    transform: translateY(68px);
+}
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar {
+    max-width: 240px;
+    background-color: rgb(252, 247, 247);
+}
+
 
 .title-section{
     color: #007C77;
     display: flex;
     align-items: center;
-    height: 68px;
     width: 33%;
-
 }
 
 .title{
-    font-size: 44px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 36px;
 }
 
-.fa-cat{
-    font-size: 36px;
+.title-section img{
+    width: 50px;
     padding-right: 16px;
 }
 
@@ -52,7 +79,7 @@ header{
 
 .fa-magnifying-glass{
     background-color: rgb(227, 224, 224);
-    border: solid 1px rgb(192, 186, 186);
+    border: solid 1px rgb(224, 219, 219);
     width: 30px;
     height: 30px;
     text-align: center;
@@ -61,7 +88,7 @@ header{
 }
 
 .fa-microphone-lines{
-    color: rgb(192, 186, 186);
+    color: rgb(224, 219, 219);
     margin-left: 10px;
     font-size: 22px;
 }
@@ -78,10 +105,10 @@ header{
 .fa-bell{
     font-size: 22px;
     margin: 20px;
-    color: rgb(192, 186, 186);;
+    color: rgb(224, 219, 219);
 }
 
-.fa-paw{
+.notification-ico{
     font-size: 16px;
     width: 40px;
     height: 40px;
@@ -90,3 +117,117 @@ header{
     text-align: center;
     padding: 11px;
 }
+
+.side-bar{
+    background-color: rgb(252, 247, 247);
+    width: 240px;
+    z-index: 1;
+    border-bottom: solid 1px white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+}
+
+
+.players{
+    overflow-y: hidden;
+    flex-basis: 75%;
+}
+
+.players:hover{
+    overflow-y: scroll;
+}
+
+.side-bar-item{
+    display: flex;
+    align-items: center;
+    margin: 25px 10px;
+    font-family: cursive;
+    font-size: 10px;
+    text-align: center;
+}
+
+.user-ico{
+    width: 26px;
+    margin-right: 5px;
+    border-radius: 50%;
+    background-color: rgb(232, 255, 60);
+}
+
+.side-bar-item h1{
+    width: 120px;
+    text-align: left;
+}
+
+.side-bar-item p{
+    font-size: 14px;    
+    width: 50px;
+    text-align: right;
+}
+
+.side-bar-buttom
+{
+    background-color: rgb(252, 247, 247);
+    width: 100%; 
+    flex-basis: 25%;
+    border-top: solid 2px white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.side-bar-social{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgb(237, 232, 232);
+    height: 75%;
+    width: 85%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.side-bar-social h1{
+    text-align: center;
+}
+
+.social-icons{
+    text-align: center;
+    font-size: 24px;
+}
+
+.social-icons i{
+    margin: 8px;
+}
+
+.navbar::-webkit-scrollbar{
+    display: none;
+  }
+
+
+
+.navbar {
+    overflow-x: scroll;
+    white-space: nowrap;
+    height: 40px;
+    margin: 10px;
+    overflow-y: hidden;
+    width: 1660px;
+  }
+  
+  .navbar-list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    
+  }
+  
+  .navbar-item {
+    border: solid 1px black;
+    margin: 0 20px;
+    border-radius: 2em;
+    padding: 10px 12px;
+  }
+  
